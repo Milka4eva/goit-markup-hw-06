@@ -61,6 +61,29 @@
                         <button data-modal-close class="modalbutton">
                         <svg class="close" width="18px" height="18px"><use href="./images/symbol-defs.svg#close"></use></svg>
                         </button>
+                        <p>Залиште свої дані, ми вам передзвонимо</p>
+                        <form>
+                            <div class="name">
+                                <label type="name" for="username">Iм'я</label>
+                                <input type="text" name="Name" id="username"/>
+                            </div>
+                            <div class="phone">
+                                <label type="phone" for="phone">Телефон</label>
+                                <input type="tel" name="phone" id="phone"/>
+                            </div>
+                            <div class="email">
+                                <label type="email" for="email">Пошта</label>
+                                <input type="email" name="email" id="email"/>
+                            </div>
+                            <div class="comment">
+                                <label type="comment" for="comment">Коментар</label>
+                                <input type="text" name="comment" id="comment" placeholder="Введіть текст"/>
+                            </div>
+                            <div class="agree">
+                                <p>Погоджуюся з розсилкою та приймаю <a class="agreelink" href="">Умови договору</a></p>
+                            </div>
+                            <button type="submit" class="agree">Відправити</button>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -294,6 +317,13 @@
                     </a>
                 </li>
             </ul>
+            </div>
+            <div class="footercolumn3">
+                <p>Підпишіться на розсилку</p>
+                <form>
+                    <input type="Email" name="Email"/>
+                    <button type="button" name="signup">Підписатися</button>
+                </form>
             </div>
         </div>
         </footer>
