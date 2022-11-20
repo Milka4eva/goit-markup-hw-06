@@ -63,26 +63,32 @@
                         </button>
                         <p>Залиште свої дані, ми вам передзвонимо</p>
                         <form>
+                            <div class="formdiv"></div>
                             <div class="name">
-                                <label type="name" for="username">Iм'я</label>
-                                <input type="text" name="Name" id="username"/>
+                                <label class="form-label" type="name" for="username">Iм'я</label>
+                                <input class="form-input" type="text" name="Name" id="username"/>
+                                <svg width="18px" height="18px" class="nameitemform"><use href="./images/symbol-defs#person"></use></svg>
                             </div>
                             <div class="phone">
-                                <label type="phone" for="phone">Телефон</label>
-                                <input type="tel" name="phone" id="phone"/>
+                                <label class="form-label" type="phone" for="phone">Телефон</label>
+                                <input class="form-input" type="tel" name="phone" id="phone"/>
+                                <svg width="18px" height="18px" class="phoneitemform"><use href="./images/symbol-defs#phone"></use></svg>
                             </div>
                             <div class="email">
-                                <label type="email" for="email">Пошта</label>
-                                <input type="email" name="email" id="email"/>
+                                <label class="form-label" type="email" for="email">Пошта</label>
+                                <input class="form-input" type="email" name="email" id="email"/>
+                                <svg width="18px" height="18px" class="emailitemform"><use href="./images/symbol-defs#email"></use></svg>
                             </div>
                             <div class="comment">
-                                <label type="textarea" rows="5" for="textarea">Коментар</label>
-                                <input type="textarea" name="textarea" id="textarea" placeholder="Введіть текст"/>
+                                <label class="form-label" type="textarea" rows="5" for="textarea">Коментар</label>
+                                <textarea type="textarea" rows="5" name="textarea" id="textarea" placeholder="Введіть текст"></textarea>
                             </div>
-                            <div class="agree">
-                                <p>Погоджуюся з розсилкою та приймаю <a class="agreelink" href="">Умови договору</a></p>
+                            <div class="agreetext">
+                                <input class="agree-input" type="checkbox" name="agreement" id="agree"/>
+                                <label class="agree-label" name="agreement" for="agree"><p>Погоджуюся з розсилкою та приймаю <a class="agreelink" href="">Умови договору</a></p></label>
                             </div>
                             <button type="submit" class="agree">Відправити</button>
+                            </div>
                         </form>
                     </div>
                 </div>
