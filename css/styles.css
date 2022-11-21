@@ -344,7 +344,7 @@ form > .agree {
 .nameitemform,
 .phoneitemform {
     position: absolute;
-    background-color: var(--main-blackish);
+    fill: var(--main-blackish);
     transform: translateX (-60%);
     bottom: 9%;
     right: 94%;
@@ -353,7 +353,7 @@ form > .agree {
 .form-input:focus + .emailitemform,
 .form-input:focus + .phoneitemform,
 .form-input:focus + .nameitemform {
-    background-color: var(--main-blue);
+    fill: var(--main-blue);
 }
 
 .form-input {
