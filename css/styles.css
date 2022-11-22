@@ -307,26 +307,8 @@ header {
     cursor: pointer;
 }
 
-form > .agreetext {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--main-grey);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    cursor: pointer;
-}
-
 .agree-label > p {
     margin: 0;
-}
-
-.agree-label {
-    margin-left: 8.38px;
 }
 
 .form-label:focus + .form-input,
@@ -408,11 +390,27 @@ form > .agree:hover, form > .agree:focus {
     letter-spacing: 0.01em;
 }
 
-.agreetext {
-    position: relative;
+form > .agreetext {
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-.agree-input {
+.agree-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.agree-label > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--main-grey);
+}
+
+.checkbox {
     position: absolute;
     appearance: none;
     -webkit-appearance: none;
@@ -425,9 +423,10 @@ form > .agree:hover, form > .agree:focus {
     height: 15px;
     background-color: var(--main-white);
     border: 1px solid var(--main-blackish);
+    margin-right: 8.38px;
 }
 
-.agree-input:checked + .checkitem{
+.checkbox:checked + .checkitem{
     background-color: var(--main-blue);
     background-image: url('./images/symbol-defin#icon-check');
     background-size: contain;
