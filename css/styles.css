@@ -431,6 +431,7 @@ form > .agreetext {
     background-image: url('./images/symbol-defin#icon-check');
     background-size: contain;
     background-origin: border-box;
+    border: none;
 }
 
 h1 {
