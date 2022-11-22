@@ -408,8 +408,30 @@ form > .agree:hover, form > .agree:focus {
     letter-spacing: 0.01em;
 }
 
-.agree-input:checked {
-    color: var(--main-blue);
+.agreetext {
+    position: relative;
+}
+
+.agree-input {
+    position: absolute;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.checkitem {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background-color: var(--main-white);
+    border: 1px solid var(--main-blackish);
+}
+
+.agree-input:checked + .checkitem{
+    background-color: var(--main-blue);
+    background-image: url('./images/symbol-defin#icon-check');
+    background-size: contain;
+    background-origin: border-box;
 }
 
 h1 {
