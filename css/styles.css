@@ -260,6 +260,8 @@ header {
     right: 8px;
     position: absolute;
     cursor: pointer;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modalbutton:hover, .modalbutton:focus {
@@ -300,20 +302,41 @@ header {
     width: 100%;
     height: 40px;
     margin: 0;
+    outline: 0;
     font: inherit;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    padding: 11px 25px;
+    padding: 11px 30px;
     cursor: pointer;
+}
+
+.form-input-agree {
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    border-radius: 4px;
+    outline: 0;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    resize: none;
+    cursor: pointer;
+}
+
+.form-input-agree::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
 }
 
 .agree-label > p {
     margin: 0;
 }
 
-.form-label:focus + .form-input,
-.form-label:focus + .form-input-agree {
-    border: 1px solid var(main-blue);
+.form-input:focus, .form-input:hover,
+.form-input-agree:hover, .form-input-agree:focus,
+.form-input:active, .form-input-agree:active {
+    border: 1px solid #2196F3;
 }
 
 .form-label {
@@ -362,7 +385,7 @@ form > .agree:hover, form > .agree:focus {
     position: absolute;
     fill: var(--main-blackish);
     transform: translateX (-60%);
-    bottom: 9%;
+    bottom: 17%;
     right: 94%;
 }
 
@@ -370,24 +393,6 @@ form > .agree:hover, form > .agree:focus {
 .form-input:active + .phoneitemform,
 .form-input:active + .nameitemform {
     fill: var(--main-blue);
-}
-
-.form-input-agree {
-    padding: 12px 16px;
-    width: 100%;
-    height: 120px;
-    margin: 0;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    resize: none;
-    cursor: pointer;
-}
-
-.form-input-agree::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
 }
 
 form > .agreetext {
@@ -427,7 +432,6 @@ form > .agreetext {
 }
 
 .checkbox:checked + .checkitem{
-    background-color: var(--main-blue);
     background-image: url('./images/symbol-defin#icon-check');
     background-size: contain;
     background-origin: border-box;
@@ -906,7 +910,6 @@ address {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    line-height: 100%;
     text-align: left;
     letter-spacing: 3%;
     text-transform: uppercase;
