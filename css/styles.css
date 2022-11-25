@@ -432,8 +432,7 @@ form > .agreetext {
 }
 
 .checkbox:checked + .checkitem{
-    background-size: contain;
-    background-origin: border-box;
+    fill: var(--main-blue);
     border: none;
 }
 
