@@ -307,6 +307,8 @@ header {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding: 11px 30px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input-agree {
@@ -318,6 +320,8 @@ header {
     outline: 0;
     border: 1px solid rgba(33, 33, 33, 0.2);
     resize: none;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input-agree::placeholder {
