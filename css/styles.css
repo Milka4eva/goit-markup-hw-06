@@ -387,6 +387,12 @@ form > .agree:hover, form > .agree:focus {
     right: 94%;
 }
 
+.form-input:hover + .emailitemform,
+.form-input:hover + .phoneitemform,
+.form-input:hover + .nameitemform,
+.form-input:focus + .emailitemform,
+.form-input:focus + .phoneitemform,
+.form-input:focus + .nameitemform,
 .form-input:active + .emailitemform,
 .form-input:active + .phoneitemform,
 .form-input:active + .nameitemform {
@@ -394,7 +400,6 @@ form > .agree:hover, form > .agree:focus {
 }
 
 form > .agreetext {
-    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -424,16 +429,24 @@ form > .agreetext {
     display: inline-block;
     width: 16px;
     height: 15px;
-    background-color: var(--main-white);
+    fill: var(--main-white);
     border: 1px solid var(--main-blackish);
     margin-right: 8.38px;
     border-radius: 4px;
+}
+
+.checkitem > svg {
+    opacity: 0;
 }
 
 .checkbox:checked + .checkitem{
     background-color: var(--main-blue);
     border: none;
     border-radius: 4px;
+}
+
+.checkbox:checked + .checkitem>svg {
+    opacity: 1;
 }
 
 h1 {
